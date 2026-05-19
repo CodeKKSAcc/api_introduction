@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_6/api_quotes.dart';
-
-import 'api_comments.dart';
+import 'package:project_6/api_product.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: ApiQuotes()
+        home: ApiProduct()
     );
   }
 }

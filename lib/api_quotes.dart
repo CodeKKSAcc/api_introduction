@@ -9,39 +9,7 @@ class ApiQuotes extends StatefulWidget {
 }
 
 class _ApiQuotesState extends State<ApiQuotes> {
-  List<dynamic> myQuotes = [];
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(),
-    );
-  }
-
-  getQuotes() async{
-    String myUrl = "https://dummyjson.com/quotes";
-    //get (+ Query Parameters) -> to fetch the data
-    myHttpPack.Response getResp = await myHttpPack.get(Uri.parse(myUrl));
-
-    if(getResp.statusCode == 200){
-      dynamic data = jsonDecode(getResp.body);
-      myQuotes = data["quotes"];
-    }
-    setState((){});
-  }
-}
-
-
-/*class ApiQuotes extends StatefulWidget {
-
-  @override
-  State<ApiQuotes> createState() => _ApiQuotesState();
-}
-
-class _ApiQuotesState extends State<ApiQuotes> {
-  */
-/*List<dynamic> myQuotes = [];*/ /*
+List<dynamic> myQuotes = [];
 
   @override
   void initState() {
@@ -101,5 +69,5 @@ class _ApiQuotesState extends State<ApiQuotes> {
       return [];
     }
   }
-}*/
+}
 //post(+ Body Parameters) -> to add/update the data
