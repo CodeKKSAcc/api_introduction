@@ -134,9 +134,7 @@ class ApiProduct extends StatelessWidget {
                               "Created at: ${allData[index].meta.createdAt}",
                             ),
                             SizedBox(height: 12),
-                            Text(
-                              "Barcode No: ${allData[index].meta.barcode}",
-                            ),
+                            Text("Barcode No: ${allData[index].meta.barcode}"),
                             SizedBox(height: 21),
                             Container(
                               alignment: Alignment(0, 0),
@@ -157,14 +155,19 @@ class ApiProduct extends StatelessWidget {
                               itemBuilder: (context, ind) {
                                 return Container(
                                   padding: EdgeInsets.all(9),
-                                  margin: EdgeInsets.only(right: 12, left: 12, top: 12),
+                                  margin: EdgeInsets.only(
+                                    right: 12,
+                                    left: 12,
+                                    top: 12,
+                                  ),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(18),
-                                    border: Border.all()
+                                    border: Border.all(),
                                   ),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "Ratings: ${allData[index].reviews[ind].rating}",

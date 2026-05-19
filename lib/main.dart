@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_6/api_product.dart';
+import 'package:project_6/freemium_live_api/live_api_news_everything.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: ApiProduct()
+        home: LiveApiNewsEverything()
     );
   }
 }
