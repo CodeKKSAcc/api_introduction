@@ -6,7 +6,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-import 'live_api_model/live_api_everything.dart';
+import 'live_api_model/live_api_model.dart';
 
 class LiveApiNewsEverything extends StatelessWidget {
   List<ArticlesModel> allData = [];
