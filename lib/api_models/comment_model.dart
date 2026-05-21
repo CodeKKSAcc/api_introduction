@@ -35,7 +35,7 @@ class CommentModel {
       likes: myJson["likes"],
       postId: myJson["postId"],
       body: myJson["body"],
-      user: UserModel.fromJson(myJson["user"]),
+      user: UserModel.fromJson(myJson["user"] ??  {}),
     );
   }
 }
@@ -64,6 +64,6 @@ class DataModel {
     return DataModel(limit: myJson["limit"],
         skip: myJson["skip"],
         total: myJson["total"],
-        comments: myJson["comments"]);
+        comments: myComment);
   }
 }
