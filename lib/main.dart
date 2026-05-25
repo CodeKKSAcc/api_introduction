@@ -1,15 +1,6 @@
-
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:project_6/api_cart.dart';
-import 'package:project_6/api_comments.dart';
-import 'package:project_6/api_product.dart';
-import 'package:project_6/api_quotes.dart';
-import 'package:project_6/api_todo.dart';
-import 'package:project_6/api_users.dart';
-import 'package:project_6/freemium_live_api/live_api_news_everything.dart';
-import 'package:project_6/freemium_live_api/live_api_news_headline.dart';
+
+import 'freemium_live_api/live_weather_api/live_api_weather_forecast.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LiveApiNewsHeadline(),
+      home: LiveApiWeatherForecast(),
     );
   }
 }

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as myHttp;
 
-import 'live_api_model/live_api_model.dart';
+import 'live_news_api_model/live_news_api_model.dart';
 
 class LiveApiNewsHeadline extends StatefulWidget {
   @override

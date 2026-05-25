@@ -18,7 +18,6 @@ class CryptoModel {
   }
 }
 
-// Company Work
 class CoordinatesModel {
   num lat;
   num lng;
